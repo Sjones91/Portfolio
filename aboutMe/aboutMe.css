@@ -1,0 +1,13 @@
+
+.aboutText {
+    max-width: 80%;
+    margin: 0 auto 20px;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+}
+.selfImage {
+    margin-bottom: 30px;
+}
+.contentWrap {
+    padding-bottom: 30px;
+}

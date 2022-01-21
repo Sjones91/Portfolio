@@ -1,0 +1,123 @@
+/*Global styles */
+html {
+    box-sizing: border-box;
+    color: white;
+    font-size: 15px;
+    
+}
+
+.cardBody, .cardContent {
+    display: flex;
+    flex-direction: column;
+    
+}
+/*Main Styles */
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+.cardBody {
+    background-color:hsl(244, 38%, 16%);
+    width: 90%;
+    margin: 20% 5% ;
+    flex-grow: 1;
+    border-radius: 10px;
+}
+.header {
+    display: flex;
+    background-color: hsl(277, 64%, 61%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.headerImage {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 100%;
+    mix-blend-mode: multiply; 
+ 
+}
+h2, p {
+    margin: 0;
+}
+
+.cardContent {
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.75rem;
+}
+span {
+    color: hsl(277, 64%, 61%);
+}
+.description {
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.stats {
+    padding: 15px 0px 15px 0;
+}
+p {
+    font-family: 'Lexend Deca', sans-serif;  
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400px;
+}
+
+/*Media Queries */
+@MEDIA screen and (min-width: 1000px) {
+    body {
+        display: flex;
+        height: 100vh;
+    }
+    .cardBody {
+        max-width: 80%;
+        margin: auto;
+        max-height: 60%;
+        flex-direction: row-reverse;
+        flex-grow: 1;
+    }
+    .cardContent {
+        padding:3%;
+        padding-left: 5%;
+        padding-right: 10%;
+        text-align: left;
+        margin: 0;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .headerImage, .header {
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+        flex-grow: 2;
+        min-width: 50%;
+        
+    }
+    .description {
+        margin-top:10px;
+    }
+    .statBlock {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+
+
+}

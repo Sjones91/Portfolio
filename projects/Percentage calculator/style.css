@@ -1,0 +1,133 @@
+/*Main styles*/
+html {
+    box-sizing: border-box;
+}
+.pageBody, .headerBar, .headerTitle, .navList, .mainContent, .userContent, .navList, .buttons {
+    display: flex;
+}
+.pageBody, .mainContent, .input, .output {
+    flex-direction: column;
+}
+.pageBody {
+    height: 100vh;
+}
+/*Header styles*/
+.headerBar {
+    background-color: rgb(29, 28, 28);
+    border-bottom: 3px black solid;
+    color: white;
+    height: 10vh;
+    justify-content: space-between;
+    box-shadow:rgb(29, 28, 28) 0px 5px 10px;
+    z-index: 1;
+}
+h1 {
+    font-size: 2.25rem;
+    margin: auto 0;
+    padding-left: 40px;
+}
+h2 {
+    font-size: 1.5rem;
+    margin: auto 0;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.navList {
+    font-size: 1.5rem;
+    margin: auto 0;
+    padding-right: 30px;
+}
+li {
+    margin: auto 20px;
+}
+li:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+/*Body styles*/
+.mainContent {
+    max-width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-shadow: 0 9px 0px 0px #f0f1f5, 0 -9px 0px 0px #f0f1f5, 12px 0 25px -4px rgba(8, 8, 8, 60%), -12px 0 25px -4px rgba(8, 8, 8, 60%);
+}
+.mainContent h1 {
+    font-size: 4rem;
+    margin-top: 40px;
+    font-weight:bolder;
+} 
+.mainContent h2 {
+    margin: auto;
+    font-weight:bold;
+    margin-top: 10px;
+}
+.userContent {
+    flex-grow: 1;
+    margin-top: 50px;
+}
+.input {
+    min-width: 50%;
+}
+input {
+    width: 88%;
+    margin: 0 auto;
+    height:50px;
+    border: black 3px solid;
+    text-align: center;
+    font-size: 1.5rem
+}
+.buttons {
+    max-width: 90%;
+    flex-direction: row;
+    align-items: stretch; 
+    flex-wrap: wrap;  
+}
+
+.button {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: auto;
+    background-color: green;
+    flex-grow: 1;
+    margin: 5px;
+    width: 45%;
+    height: 100px;
+}
+.input ul li {
+    padding-top: 40px;
+}
+.output {
+    min-width: 50%;   
+}
+.display {
+    background-color: black;
+    height: 100px;
+    color: white;
+    
+    text-align: center;
+}
+.display p {
+   padding-top: 30px;
+   font-size: 3rem;
+}
+.reset {
+    background-color: grey;
+    margin: 15px 25px;
+    height: 70px;
+    text-align: center;
+    align-self: flex-end;
+    
+}
+p {
+    padding-top: 10px;
+    font-size: 2rem;
+    font-weight:bold;
+}
+.button:hover, .reset:hover {
+    cursor: pointer;
+    opacity: 80%;
+}

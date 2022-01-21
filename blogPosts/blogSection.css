@@ -1,0 +1,31 @@
+.blogPost {
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    background-color: rgba(56, 42, 42, 0.2);
+    margin: 20px auto;
+    border-radius: 8px;
+}
+.blogContent {
+    padding-top: 20px;
+}
+
+@media screen and (min-width:970px) {
+    .blogPost {
+        flex-direction: row;
+        min-width: 80%;
+    }
+    .blogContent {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-grow: 2;
+    }
+    .projectButton {
+        align-self:flex-end;
+        max-width: 120px;
+    }
+    .blogImg {
+        flex-grow: 1;
+    }
+
+}

@@ -1,0 +1,42 @@
+
+.contactImg {
+    max-width: 30%;
+}
+.contactLink{
+    margin: auto 0;
+    font-family: 'Comfortaa', cursive;
+}
+.extLink {
+    justify-content: space-around;
+    margin: 20px 0 20px;
+    flex-wrap: wrap;
+}
+.contactInfo p {
+    max-width: 80%;
+    margin: 30px auto 0;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+@media screen and (min-width: 700px ) {
+    .linksWrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 50px auto;
+        justify-content: space-around;
+    }
+    
+    .extLink {
+        width: 25%;
+        flex-direction: column;
+    }
+    .contactLink {
+        padding-top: 25px;
+        margin: auto;
+    }
+    .contactImg, .contactInfo  {
+        margin: auto;
+    }
+
+}

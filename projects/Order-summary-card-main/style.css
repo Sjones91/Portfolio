@@ -1,0 +1,124 @@
+html {
+    display: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+
+}
+button {
+    border: none;
+}
+p {
+    text-align: center;
+    margin: 3px;
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+
+}
+
+
+/* Main styles*/
+
+.cardBody, body, .buttons, .cardContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Body styles*/
+.heroImage {
+    align-self: flex-start;
+    align-self: stretch;
+    border-radius: 20px 20px 0 0;
+}
+.cardContent {
+    max-width: 85%;
+    flex-grow: 1;
+    justify-content: space-around;
+
+}
+h1 {
+    font-size: 1.25rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+body {
+   background-image: url(images/pattern-background-mobile.svg);
+}
+.cardBody {
+    flex-grow: 1;
+    max-width: 90%;
+    height: 90vh;
+    margin: 10% auto;
+    background-color: white;
+    border-radius: 20px;
+}
+.paymentPlan {
+    display:flex;
+    flex-direction: row;
+    background-color: hsl(225, 100%, 98%);
+    width: 100%;
+    justify-content: space-around;
+    align-items:center;
+    border-radius: 15px; 
+    
+}
+.cost {
+    display: flex;
+    flex-direction: column;
+    line-height: 1rem;
+}
+strong {
+    color: hsl(223, 47%, 23%);
+}
+a {
+    color: hsl(245, 75%, 52%);
+}
+a:hover {
+    cursor: pointer;
+}
+.button {
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    width: 100%;
+    padding: 0;
+    height: 50px;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.button:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+.cancelButton {
+    color:hsl(224, 23%, 55%);
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.cancelButton:hover {
+    color: black;
+    cursor: pointer;
+}
+/*footer*/
+.attribution {
+    display:flex;
+    flex-direction: row;
+    margin: auto;
+    align-self: flex-end;
+}
+
+/*Media Queries*/
+@media (min-width: 1300px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg)
+    }
+    .cardBody {
+        max-width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+}

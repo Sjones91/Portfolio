@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>An experimental percentage increase calulator</title>
+    </head>
+    <body>
+        <container class="pageBody">
+            <container class="headerBar">
+                <div class="headerTitle">
+                    <h1>Sean Jones</h1>
+                    <h2>Web Developer</h2>
+                </div>
+                <div class="navList">
+                    <ul class="navList">
+                        <li>Home</li>
+                        <li>About Me</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </container>
+            <container class="mainContent">
+                <h1>Percentage Increase Calculator</h1>
+                <h2>Please input a value and click a desired increase value.</h2>
+                <container class="userContent">
+                    <container class="input" >
+                        <input type="text" id="inputValue"></input>
+                        <ul class="buttons">
+                            <li class="button" id="25percent">25%</li>
+                            <li class="button" id="50percent">50%</li>
+                            <li class="button" id="75percent">75%</li>
+                            <li class="button" id="100percent">100%</li>
+                        </ul>
+                    </container>
+                    <div class="output">
+                        <div class="display" id="outputDisplay"></div>
+                        <div class="reset" id="resetCalculator">
+                            <p>Reset Calculator</p>
+                        </div>
+                    </div>
+                </container>
+            </container>    
+        </container>
+        <script src="script.js"></script>
+    </body>
+</html>
