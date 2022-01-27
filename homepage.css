@@ -357,5 +357,8 @@ a {
     .projectImage {
         max-height: 200px;
     }
+    .projectText {
+        color: pink;
+    }
     
 }
