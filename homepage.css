@@ -63,7 +63,7 @@ a {
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
-  }
+}
 .name {
     font-size: 2.5rem;
     padding-bottom: 3px;
@@ -282,6 +282,7 @@ a {
 }
 .projectImage {
     height: 40%;
+
 }
 
 
@@ -351,5 +352,10 @@ a {
         margin: 40px auto;
     }
 
-
+}
+@media screen (max-width: 400px) {
+    .projectImage {
+        max-height: 200px;
+    }
+    
 }
