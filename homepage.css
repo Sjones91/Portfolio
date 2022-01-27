@@ -351,9 +351,8 @@ a {
         max-width: 260px;
         margin: 40px auto;
     }
-
 }
-@media screen (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .projectImage {
         max-height: 200px;
     }
